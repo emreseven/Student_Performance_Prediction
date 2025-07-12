@@ -28,8 +28,10 @@ def main():
         hours_studied = st.number_input(
             "Hours Studied per day",
             min_value=0.0,
+            max_value=24.0,
             value=7.0,
             step=0.5,
+            format="%.1f",
             help="Number of hours spent studying per day"
         )
         
@@ -50,8 +52,10 @@ def main():
         sleep_hours = st.number_input(
             "Sleep Hours per day",
             min_value=0.0,
+            max_value=24.0,
             value=8.0,
             step=0.5,
+            format="%.1f",
             help="Number of hours of sleep per day"
         )
         
